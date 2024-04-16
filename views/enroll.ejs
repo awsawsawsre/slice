@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2024 Enrollment</title>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.0.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css"/>
+    </style>
+</head>
+<body>
+  <section class="h-100 bg-dark">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card card-registration my-4">
+            <div class="row g-0">
+              <div class="col-xl-6 d-none d-xl-block">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                  alt="Sample photo" class="img-fluid"
+                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+              </div>
+              <div class="col-xl-6">
+                <div class="card-body p-md-5 text-black">
+                  <h3 class="mb-5 text-uppercase">Student registration form</h3>
+                  <div class="image">
+                  <img src="/img/download.jpg">
+                </div>
+                  <form action="/enroll" method="POST">
+                    <div class="form-group">
+                      <label for="fname"></label>
+                      <input type="text" name="fname" size="20" placeholder="First Name" autofocus required>
+                      <label for="lname"></label>
+                      <input type="text" name="lname" size="20" placeholder="Last Name" required>
+                    </div><br><br>
+                      <label for="address"></label>
+                      <input type="text" name="address" size="50" placeholder="Address" required>
+                    <br><br>
+                    <div class="form-group">
+                      <label for="city"></label>
+                      <input type="text" name="city" size="20" placeholder="City" required>
+                      <label for="state"></label>
+                      <input type="text" name="state" size="20" placeholder="State" required>
+                    </div><br><br>
+                    <div class="form-group">
+                      <label for="country"></label>
+                      <input type="text" name="country" size="20" placeholder="Country" required>
+                      <label for="sex"></label>
+                      <input type="text" name="sex" size="20" placeholder="Sex" required>
+                    </div><br><br>
+                    <div class="form-group">
+                      <label for="dob"></label>
+                      <input type="text" name="dob" size="20" placeholder="Date Of Birth" required>
+                      <label for="pincode"></label>
+                      <input type="text" name="pincode" size="20" placeholder="Pincode" required>
+                    </div><br><br>
+                    <div class="form-group">
+                      <label for="coursetitle"></label>
+                      <input type="text" name="coursetitle" size="20" placeholder="Coursetitle" required>
+                      <label for="email"></label>
+                      <input type="email"  name="username" size="20" placeholder="Email Address" required>
+                    </div><br><br>
+                    <div class="form-group">
+                      <label for="password"></label>
+                      <input type="password"  name="password" size="20" placeholder="Password" required>
+                      <label for="password"></label>
+                      <input type="password"  name="pwd2" size="20" placeholder="Re-Enter Password" required>
+                    </div><br><br>
+                    <button type="submit" class="btn btn-dark btn-lg btn-block">Register</button>
+                  </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
